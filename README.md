@@ -55,7 +55,7 @@ I used **Curl** with the `-I` option to inspect the HTTP response headers. This 
 
 Next, I used **Wafw00f** to determine whether a Web Application Firewall was protecting the website. The result identified **ModSecurity (SpiderLabs)**.
 
-Finally, I used **DNSRecon** to enumerate DNS records. The results provided information relating to name servers, mail servers, SPF/TXT records, service records and DNS software information.
+Finally, I used **DNSRecon** to enumerate DNS records. The results provided information relating to name servers, mail servers, SPF/TXT records, service records, and DNS software information.
 
 ## 4.2 Network Scanning with Zenmap
 
@@ -67,11 +67,11 @@ The example results provided in the practical identified four live hosts:
 
 - `172.22.28.130`
 
-The results has no MAC addresses.
+The results have no MAC addresses.
 
-After completing the scan, I opened the **Topology** section in Zenmap, enabled the legend and saved the network topology in PDF format as required by the practical task.
+After completing the scan, I opened the **Topology** section in Zenmap, enabled the legend, and saved the network topology in PDF format as required by the practical task.
 
-**Note:** The actual subnet, number of hosts and addresses should be replaced with the results from my own network when submitting the report.
+**Note:** The actual subnet, number of hosts, and addresses should be replaced with the results from my own network when submitting the report.
 
 # 5. Risk Analysis / Impact
 
@@ -99,10 +99,10 @@ Therefore, the presence of information such as a software version, IP address or
 Based on the observations from these activities, I recommend the following security improvements:
 
 1.  **Review publicly exposed technology information**  
-    Organizations should regularly review what information about their web technologies, CMS and plugins is publicly visible.
+    Organizations should regularly review what information about their web technologies, CMS, and plugins is publicly visible.
 
 2.  **Keep software updated**  
-    CMS platforms, plugins and other web technologies should be regularly updated and reviewed against current security advisories.
+    CMS platforms, plugins, and other web technologies should be regularly updated and reviewed against current security advisories.
 
 3.  **Review HTTP headers**  
     HTTP response headers should be reviewed to determine whether unnecessary technical information is being exposed.
@@ -127,7 +127,7 @@ Based on the observations from these activities, I recommend the following secur
 
 # 7. Conclusion
 
-During Week 2 of my Cybersecurity & Ethical Hacking internship, I completed practical activities covering footprinting, reconnaissance and network scanning.
+During Week 2 of my Cybersecurity & Ethical Hacking internship, I completed practical activities covering footprinting, reconnaissance, and network scanning.
 
 In the footprinting activity, I used six Kali Linux tools to collect information about the target domain. I learned how WHOIS can provide domain information, WhatWeb can identify web technologies, Nslookup can resolve domain names, Curl can inspect HTTP headers, Wafw00f can identify a WAF, and DNSRecon can provide additional DNS information.
 
@@ -143,18 +143,5 @@ Finally, I learned that reconnaissance and scanning must always be performed wit
 
 *Screenshots collected as evidence during the activities (stored in the `screenshots/` folder):*
 
-![whois output](screenshots/1_whois.png)
-
-![whatweb output](screenshots/2_whatweb.png)
-
-![nslookup output](screenshots/3_nslookup.png)
-
-![curl output](screenshots/4_curl.png)
-
-![wafw00f output](screenshots/5_wafw00f.png)
-
-![dnsrecon output](screenshots/7_zenmap.png)
-
-![Zenmap scan and topology](screenshots/8_zenmap2.png)
 
 -End-
